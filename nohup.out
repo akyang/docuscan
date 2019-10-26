@@ -1,0 +1,34 @@
+ * Serving Flask app "application" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+67.188.59.82 - - [26/Oct/2019 09:03:53] "GET / HTTP/1.1" 200 -
+14.102.94.82 - - [26/Oct/2019 10:16:52] "GET / HTTP/1.1" 200 -
+47.99.215.199 - - [26/Oct/2019 11:48:39] "GET /TP/public/index.php HTTP/1.1" 404 -
+47.99.215.199 - - [26/Oct/2019 11:48:40] "GET /TP/index.php HTTP/1.1" 404 -
+47.99.215.199 - - [26/Oct/2019 11:48:42] "GET /thinkphp/html/public/index.php HTTP/1.1" 404 -
+47.99.215.199 - - [26/Oct/2019 11:48:43] "GET /html/public/index.php HTTP/1.1" 404 -
+47.99.215.199 - - [26/Oct/2019 11:48:45] "GET /public/index.php HTTP/1.1" 404 -
+47.99.215.199 - - [26/Oct/2019 11:48:46] "GET /TP/html/public/index.php HTTP/1.1" 404 -
+47.99.215.199 - - [26/Oct/2019 11:48:48] "GET /elrekt.php HTTP/1.1" 404 -
+47.99.215.199 - - [26/Oct/2019 11:48:53] "GET / HTTP/1.1" 200 -
+221.217.98.243 - - [26/Oct/2019 12:24:27] "GET / HTTP/1.0" 200 -
+66.249.73.65 - - [26/Oct/2019 12:24:33] "GET /robots.txt HTTP/1.1" 404 -
+66.249.73.71 - - [26/Oct/2019 12:24:33] "GET / HTTP/1.1" 200 -
+196.52.43.52 - - [26/Oct/2019 13:14:53] "GET / HTTP/1.0" 200 -
+222.186.130.22 - - [26/Oct/2019 13:52:44] "GET /TP/public/index.php HTTP/1.1" 404 -
+222.186.130.22 - - [26/Oct/2019 13:52:45] "GET /TP/index.php HTTP/1.1" 404 -
+222.186.130.22 - - [26/Oct/2019 13:52:48] "GET /thinkphp/html/public/index.php HTTP/1.1" 404 -
+222.186.130.22 - - [26/Oct/2019 13:52:49] "GET /html/public/index.php HTTP/1.1" 404 -
+222.186.130.22 - - [26/Oct/2019 13:52:49] "GET /public/index.php HTTP/1.1" 404 -
+222.186.130.22 - - [26/Oct/2019 13:52:51] "GET /TP/html/public/index.php HTTP/1.1" 404 -
+222.186.130.22 - - [26/Oct/2019 13:52:54] "GET /elrekt.php HTTP/1.1" 404 -
+222.186.130.22 - - [26/Oct/2019 13:52:54] "GET /index.php HTTP/1.1" 404 -
+222.186.130.22 - - [26/Oct/2019 13:52:55] "GET / HTTP/1.1" 200 -
+139.162.106.181 - - [26/Oct/2019 14:20:51] "GET / HTTP/1.1" 200 -
+67.188.59.82 - - [26/Oct/2019 15:01:32] "GET / HTTP/1.1" 200 -
+67.188.59.82 - - [26/Oct/2019 15:01:32] "GET /favicon.ico HTTP/1.1" 404 -
+172.58.37.231 - - [26/Oct/2019 15:05:13] "GET / HTTP/1.1" 200 -
+172.58.37.231 - - [26/Oct/2019 15:05:13] "GET /favicon.ico HTTP/1.1" 404 -
