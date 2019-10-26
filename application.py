@@ -9,6 +9,7 @@ from docusign_esign import ApiClient, EnvelopesApi, EnvelopeDefinition, Signer, 
 from flask import Flask, flash, request, redirect, url_for
 from flask import make_response
 from flask import render_template
+from twilio.rest import Client
 
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -89,8 +90,14 @@ def make_envelope(file, sender, signer_name, signer_email, token):
 
 @application.route('/sign', methods=['GET', 'POST'])
 def sign():
-    print(request.args['code'])
-    return 'rt'
+    client = Client(config['twilio']['sid'], config['twilio']['auth_token'])
+    message = client.messages \
+                .create(
+                     body='Document ' + request.args['code'] + ' has been signed!',
+                     from_='+' + config['twilio']['number'],
+                     to='+16503023189'
+                 )
+    return 'success'
 
 
 @application.route('/', methods=['GET', 'POST'])
