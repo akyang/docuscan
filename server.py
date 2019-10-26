@@ -39,6 +39,18 @@ def embed_qrcode(filename):
 
 
 @app.route('/', methods=['GET', 'POST'])
+def auth():
+    # redirect to authorize app
+    url = 'https://account-d.docusign.com/oauth/auth?{response}&{scope}&{cid}&{redirect}'.format(
+        response='code',
+        scope='signature',
+        cid=config['docusign']['integration'],
+        redirect=config['docusign']['redirect']
+    )
+    return redirect(url)
+
+
+@app.route('/upload', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
         # check if the post request has the file part
