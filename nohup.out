@@ -124,3 +124,91 @@ Traceback (most recent call last):
   File "application.py", line 3, in <module>
     import requests
 ImportError: No module named requests
+ * Serving Flask app "application" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Traceback (most recent call last):
+  File "application.py", line 155, in <module>
+    application.run(host='0.0.0.0', port=80)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/serving.py", line 1010, in run_simple
+    inner()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/serving.py", line 963, in inner
+    fd=fd,
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/serving.py", line 806, in make_server
+    host, port, app, request_handler, passthrough_errors, ssl_context, fd=fd
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/werkzeug/serving.py", line 699, in __init__
+    HTTPServer.__init__(self, server_address, handler)
+  File "/usr/lib/python2.7/SocketServer.py", line 417, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib/python2.7/SocketServer.py", line 431, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 13] Permission denied
+ * Serving Flask app "application" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+67.188.59.82 - - [27/Oct/2019 15:41:54] "GET / HTTP/1.1" 302 -
+67.188.59.82 - - [27/Oct/2019 15:42:54] "GET / HTTP/1.1" 302 -
+67.188.59.82 - - [27/Oct/2019 15:42:59] "GET / HTTP/1.1" 302 -
+67.188.59.82 - - [27/Oct/2019 15:43:07] "GET /upload?code=eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAYABwAA4Rpc9FrXSAgAAG2ho_Ra10gCAI4-IcXTisZGndapPSRe82gVAAEAAAAYAAEAAAAFAAAADQAkAAAANTQzY2NhYjgtNDliMS00ZmRlLThkZWItMTI0Zjg5YTk0M2Y0MAAA4Rpc9FrXSBIAAQAAAAsAAABpbnRlcmFjdGl2ZTcA8KfNS2VQlEaXEyPMlaUuMg.ZhKXaOzJ-dm21vONd2CPn4RKUnPF2DnYpQpItAg3TZpr-XczlMV-0IzCCJuqLa7_Dy_9duQC9PB-GHH4gGuKA9YikU5Wu6nLSHpoCdL0PuJrOFmb-6GcmamTibEVhdzFTzQx5lAwnQvXJR1n_M749VrK-jywHVf8KoglRMN4UF1mNIbcyWaSDmvze2gl6wRTmvBjehUvfrLWqtZUdsbmi1AyFOGFBbr9Ansr5de_sTVCuLP0J61mjp3qYbApclJ9oHz4vTd3SBRKAiTEqsoMxR6HlHC2x4pG4WwKQUSemAzVSNXpE5XAPEiDydqzOKjJgnuHBuNZBw87NbIzqfIOEA HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:07] "GET /static/fonts/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:07] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:07] "GET /static/vendor/css-hamburgers/hamburgers.min.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:07] "GET /static/vendor/select2/select2.min.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:07] "GET /static/vendor/animate/animate.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:07] "GET /static/vendor/animsition/css/animsition.min.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:07] "GET /static/vendor/daterangepicker/daterangepicker.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:07] "GET /static/css/util.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:07] "GET /static/css/main.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:07] "GET /static/vendor/jquery/jquery-3.2.1.min.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:08] "GET /static/vendor/animsition/js/animsition.min.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:08] "GET /static/vendor/bootstrap/js/popper.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:08] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:08] "GET /static/vendor/select2/select2.min.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:08] "GET /static/fonts/poppins/Poppins-Bold.ttf HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:08] "GET /static/fonts/poppins/Poppins-Regular.ttf HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:08] "GET /static/vendor/daterangepicker/moment.min.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:08] "GET /static/vendor/daterangepicker/daterangepicker.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:08] "GET /static/vendor/countdowntime/countdowntime.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:08] "GET /static/js/main.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:08] "GET /static/fonts/poppins/Poppins-Medium.ttf HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:08] "GET /static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:09] "GET /static/images/icons/favicon.ico HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:43:52] "GET /upload?file=Google.html&signer_name=Winson+Luk&signer_email=winson.luk%40gmail.com HTTP/1.1" 200 -
+95.85.80.218 - - [27/Oct/2019 15:44:59] "GET / HTTP/1.1" 302 -
+67.188.59.82 - - [27/Oct/2019 15:47:22] "GET / HTTP/1.1" 302 -
+67.188.59.82 - - [27/Oct/2019 15:47:27] "GET /upload?code=eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAYABwAAuxP39FrXSAgAAEeaPvVa10gCAFLaV4dIEQdGsyhSu2ZjyFMVAAEAAAAYAAEAAAAFAAAADQAkAAAANTQzY2NhYjgtNDliMS00ZmRlLThkZWItMTI0Zjg5YTk0M2Y0MAAAuxP39FrXSBIAAQAAAAsAAABpbnRlcmFjdGl2ZTcAxmSPn0vcd0CZ41ACLhszzA.UmaXjvdSDkggGTB1WbUFwbWhjH74e7Asrvk3roeQnl3KgqwZJTPI5unIbelsI9TKsPouqAib-05eB2Fzbr4P5zIvoa8i87gj0fJqxwMRdQO0FVS60W4oU-C2-UDl8K-dzv1F4qvhQX2A31Iyu6Ya3zd9RC0QtnkBXmiu53-W6bR6N9A00diwfNTZLrVwUAU8Sia5y-Vaun13VpyTO6sBrGUGK7uADrJVdbBMj_tNh7SI_7JZEzUALrRwZfmQBrBTy5DT7Rs-fGMTjW9gBKnuCYrEJDlTgCFNUnRCB9V_LkF9ZPPkxtbC93JeQNJunGoC-3E0HBgCL-AnIDUAWQqw7w HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:28] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:28] "GET /static/vendor/animate/animate.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:28] "GET /static/fonts/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:28] "GET /static/vendor/css-hamburgers/hamburgers.min.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:28] "GET /static/vendor/animsition/css/animsition.min.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:28] "GET /static/vendor/select2/select2.min.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:28] "GET /static/vendor/daterangepicker/daterangepicker.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:28] "GET /static/css/util.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:28] "GET /static/css/main.css HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:28] "GET /static/vendor/jquery/jquery-3.2.1.min.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:28] "GET /static/vendor/animsition/js/animsition.min.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:28] "GET /static/vendor/bootstrap/js/popper.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:29] "GET /static/fonts/poppins/Poppins-Bold.ttf HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:29] "GET /static/fonts/poppins/Poppins-Regular.ttf HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:29] "GET /static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:29] "GET /static/fonts/poppins/Poppins-Medium.ttf HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:29] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:29] "GET /static/vendor/select2/select2.min.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:29] "GET /static/vendor/daterangepicker/moment.min.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:29] "GET /static/vendor/daterangepicker/daterangepicker.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:29] "GET /static/vendor/countdowntime/countdowntime.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:29] "GET /static/js/main.js HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:29] "GET /static/images/icons/favicon.ico HTTP/1.1" 200 -
+67.188.59.82 - - [27/Oct/2019 15:47:40] "GET /upload?file=nda.htm&signer_name=Winson+Luk&signer_email=wluk%40ucsd.edu HTTP/1.1" 200 -
