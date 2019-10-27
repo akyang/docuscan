@@ -45,6 +45,8 @@ def embed_qrcode(filename):
     embedded = content[0] + img_tag + '\n</body>' + content[1]
     f = open(application.config['EMBED_FOLDER'] + filename, 'w+')
     f.write(embedded)
+    t = open('templates/' + filename, 'w+')
+    t.write(embedded)
     return f
 
 
@@ -84,7 +86,6 @@ def make_envelope(file, sender, signer_name, signer_email, token):
 
     envelope_api = EnvelopesApi(api_client)
     results = envelope_api.create_envelope(sender['accounts'][0]['account_id'], envelope_definition=envelope_definition)
-    print(results)
     return results
 
 
@@ -137,7 +138,7 @@ def upload_file():
             access_token = request.cookies['access_token']
             sender = get_sender_account_info(access_token)
             envelope = make_envelope(embedded_file, sender, signer_name, signer_email, access_token)
-            return redirect(request.url)
+            return render_template(filename)
     elif 'code' in request.args:
         code = request.args['code']
         url = 'https://account-d.docusign.com/oauth/token'
